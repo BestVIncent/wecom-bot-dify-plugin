@@ -1,0 +1,5 @@
+path: "/wecom-bot/webhook"
+method: "POST"
+extra:
+  python:
+    source: "endpoints/wecom-bot-msg.py"

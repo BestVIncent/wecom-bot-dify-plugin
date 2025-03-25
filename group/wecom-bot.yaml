@@ -1,0 +1,55 @@
+settings:
+  - name: static_app_id
+    type: app-selector
+    required: false
+    label:
+      en_US: App
+      zh_Hans: 应用程序
+    placeholder:
+      en_US: Select a app to use
+      zh_Hans: 选择要调用的应用
+  - name: workflow_text_input_field
+    type: text-input
+    required: true
+    label:
+      en_US: Workflow text input field
+      zh_Hans: 工作流文字输入字段名
+    placeholder:
+      en_US: Please input your workflow text input field
+      zh_Hans: 请输入工作流的输入字段名称
+  - name: workflow_text_output_field
+    type: text-input
+    required: true
+    label:
+      en_US: Workflow text output field
+      zh_Hans: 工作流文字输出字段名
+    placeholder:
+      en_US: Please input your workflow text output field
+      zh_Hans: 请输入工作流的输出字段名称
+  - name: webhook_url
+    type: text-input
+    required: true
+    label:
+      en_US: Webhook URL
+      zh_Hans: Webhook URL
+    placeholder:
+      en_US: Please input your webhook url
+      zh_Hans: 请输入你的Webhook URL
+  - name: token
+    type: secret-input
+    required: true
+    label:
+      en_US: Wecom Bot Token
+      zh_Hans: 企业微信机器人Token
+    placeholder:
+      en_US: Please input your token
+      zh_Hans: 请输入你的Token
+  - name: aes_key
+    type: secret-input
+    required: true
+    label:
+      en_US: Aes Key
+      zh_Hans: 企业微信机器人Aes Key
+endpoints:
+  - endpoints/wecom-bot-verify.yaml
+  - endpoints/wecom-bot-msg.yaml

@@ -1,0 +1,38 @@
+version: 0.0.1
+type: plugin
+author: vincenthhan
+name: wecom-bot
+label:
+  en_US: wecom-bot
+  ja_JP: wecom-bot
+  zh_Hans: wecom-bot
+  pt_BR: wecom-bot
+description:
+  en_US: A plugin for wecom bot bidirectional communication.
+  zh_Hans: 企业微信机器人双向通信插件。
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  endpoints:
+    - group/wecom-bot.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-03-19T16:54:55.919774296+08:00
+privacy: PRIVACY.md
+verified: false
