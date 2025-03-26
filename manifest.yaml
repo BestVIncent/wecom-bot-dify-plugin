@@ -3,13 +3,11 @@ type: plugin
 author: vincenthhan
 name: wecom-bot
 label:
-  en_US: wecom-bot
-  ja_JP: wecom-bot
-  zh_Hans: wecom-bot
-  pt_BR: wecom-bot
+  en_US: Wecom Bot
+  zh_Hans: 企业微信机器人
 description:
-  en_US: A plugin for wecom bot bidirectional communication.
-  zh_Hans: 企业微信机器人双向通信插件。
+  en_US: A plugin for wecom bot bidirectional communication. Accept messages from wecom bot and call workflow.
+  zh_Hans: 企业微信机器人双向通信插件，接收来自企业微信的群聊和单聊消息，调用工作流并返回结果。
 icon: icon.svg
 resource:
   memory: 268435456

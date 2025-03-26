@@ -176,6 +176,3 @@ cython_debug/
 
 # Windows
 Thumbs.db
-
-# README IMGS
-./imgs

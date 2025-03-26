@@ -50,6 +50,9 @@ settings:
     label:
       en_US: Aes Key
       zh_Hans: 企业微信机器人Aes Key
+    placeholder:
+      en_US: Please input your aes key
+      zh_Hans: 请输入你的Aes Key
 endpoints:
   - endpoints/wecom-bot-verify.yaml
   - endpoints/wecom-bot-msg.yaml
