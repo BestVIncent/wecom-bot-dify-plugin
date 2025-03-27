@@ -95,7 +95,7 @@ class WecomCrypt:
             if data.get("MsgType") == "text":
                 return TextMsgRequest(**data)
             else:
-                print("wechat bot msg type not supported: %s", data)
+                logger.info("wechat bot msg type not supported: %s", data.get("MsgType"))
         return None
 
     def encrypt_xml_request_body(
